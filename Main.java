@@ -17,6 +17,11 @@ public class Main {
         scanner.close();
         return originalString;
     }
+    // Note : the time complexity of reverseSentence Function is O(n),
+    // and the Space complexity is O(n) as we’re storing string in the new variable.
+    // I didn't implement it with the recursion function to avoid using extra space,
+    // because if we used a recursion the OS would build a stack automatically
+    // then it will be much better if we can do it with iteration " without needing to build a stack manually ".
     public static String reverseSentence(String reversedSentence,String words[])
     {
         for (int i = 0; i < words.length; i++) {
